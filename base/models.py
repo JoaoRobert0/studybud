@@ -18,7 +18,7 @@ class Room(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ['-created', 'updated']
+        ordering = ['-updated', '-created']
 
     def __str__(self):
         return self.name
