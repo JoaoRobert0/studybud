@@ -9,9 +9,9 @@
     {% include 'navbar.html' %}
 
     {% if messages %}
-        <ul>
+        <ul style="margin: 0; padding: 0;">
             {% for message in messages %}
-                <li>{{message}}</li>
+                <li style="background-color: red; list-style: none; color: yellow;">{{message}}</li>
             {% endfor %}
         </ul>
     {% endif %}
